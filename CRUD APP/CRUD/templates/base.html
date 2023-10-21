@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+	{% block head %} {% endblock %}
+
+</head>
+<body>
+
+<body>
+
+<div class="container-fluid">
+	<br><br>
+
+	<div class="row">
+
+			<div class="col-lg-1 mb-4"></div>
+
+            <div class="col-lg-4 mb-4">
+
+<img style="width:500px;height:250px" src="{{ url_for('static', filename='img/finder.gif') }}" class="img-fluid">
+
+			</div>
+
+
+			<div class="col-lg-6 mb-4">
+
+	{% block body %} {% endblock %}
+
+			</div>
+			<div class="col-lg-1 mb-4"></div>
+
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="col-lg-1 mb-4"></div>
+
+		<div class="col-lg-5 mb-4">
+
+		<p>Welcome to Thing Finder! 🕵️‍</p> 
+		<p>🔍 Lost in the clutter? Never again! Say goodbye to the days of searching high and low for your belongings.</p>
+		<p>📌 "Thing Finder" is your ultimate solution for organizing your life effortlessly. With the simple CRUD (Create, Read, Update, Delete) app, you can easily record and retrieve your valuable items and their precise locations.</p>
+		<p>👀 Forget the hassle of forgetting where you put your stuff. Simply input the name of the item and its location.Truly, the optimal solution!</p>
+		<p>🌟 Experience the joy of always knowing where your belongings are. Try Thing Finder today and say hello to a more organized,Make your life Easier 🚀</p>
+
+		</div>
+
+		<div class="col-lg-6 mb-4"></div>
+
+	</div>
+
+</div>
+</body>
+</html>
